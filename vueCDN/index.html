@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search pokemons</title>
+    <link rel="shortcut icon" href="./poemonic.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+   <div id="app">
+     
+      <!-- <input type="text" v-model="number" placeholder="ingrese numero de pokemon">
+       <button v-on:click="agregarPokemon">Mostrar Pokemon</button>
+       <p>{{nuevoPokemon.name}}</p>
+      <h6>{{nuevoPokemon.url}}</h6>
+      <img :src="url" alt="" width="400" height="400">
+      <h1 >{{name}}</h1>
+       <ul>
+           <li v-for="dato in datos">
+                <h4>{{dato.name}}--{{dato.url}}</h4>
+                <img src="" alt="">
+           </li>
+           <div  class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">See pokemon</a>
+            </div>
+          </div>
+       </ul> -->
+
+       <div class="grid">
+         <div class="header">header</div>
+         <div class="menu">
+             <div class="card">card</div>
+             <div class="card">card</div>
+             <div class="card">card</div>
+             <div class="card">card</div>
+
+             <div class="card">card</div>
+            
+             
+           
+
+             
+         </div>
+         <div class="content">
+            
+            aspernatur cum! Totam autem quibusdam commodi fuga. Veritatis inventore voluptas illo laboriosam deleniti deserunt, sint culpa nobis unde. Alias cupiditate eaque asperiores natus architecto ut officia atque rem veniam?
+         </div>
+         <div class="footer">footer</div>
+       </div>
+
+       
+   </div>
+</body>
+<script src="app.js"></script>
+</html>
+
+<style>
+
+.app{
+    border: 1px solid blue;
+    background-color: blueviolet;
+    
+}
+
+body{
+    
+    background-color: aqua;
+    }
+
+
+.grid{
+    display: grid;
+    height:100vh;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        ". c c c c c m m m m m ."
+        "f f f f f f f f f f f f"
+    ;
+}
+
+.header{
+    grid-area: h;
+}
+.menu{
+    display: grid;
+    grid-area: m;
+    background-color: blue;
+    grid-template-columns: repeat(4,1fr);
+  
+}
+
+.content{
+    grid-area: c;
+    background-color: red;
+}
+.footer{
+    grid-area: f;
+    background-color: yellow;
+}
+
+.card{
+    background-color: orange;
+   
+    gap: 10px 20px;
+  
+    
+}
+
+
+</style>
